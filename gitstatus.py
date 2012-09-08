@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 
 from __future__ import print_function
 
@@ -63,7 +63,7 @@ else:
 			remote += '%s%s' % (symbols['ahead of'], ahead)
 
 out = '\n'.join([
-	str(branch),
+	str(branch)[2:-1],
 	remote,
 	staged,
 	conflicts,
@@ -71,4 +71,3 @@ out = '\n'.join([
 	untracked,
 	clean])
 print(out)
-
